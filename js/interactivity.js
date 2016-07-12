@@ -35,6 +35,7 @@ hbronze(score,playerName);
 }
 function hgold(value, name)
 {
+
    jQuery("#gold").empty();
  jQuery("#gold").append(value.toString()+" - "+name);
 hsilver(gold, goldname);
@@ -43,15 +44,22 @@ goldname=name;
 }
 function hsilver(value, name)
 {
+  if(value>0)
+  {
   jQuery("#silver").empty();
  jQuery("#silver").append(value.toString()+" - "+name);
  hbronze(silver, silvername);
  silver=value;
  silvername=name;
 }
+}
 function hbronze(value, name)
-{jQuery("#bronze").empty();
+{
+  if(value>0)
+  {
+  jQuery("#bronze").empty();
  jQuery("#bronze").append(value.toString()+" - "+name);
 bronze=value;
 bronzename=name;
+}
 }
