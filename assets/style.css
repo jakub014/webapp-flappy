@@ -1,0 +1,16 @@
+h1 {
+    color: darkblue;
+    font-size: 32px;
+    font-style: italic;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.score {
+    color: gray;
+}
+
+.gold {
+    color: gold;
+}
+#credits {
+    color: darkblue;
+}
