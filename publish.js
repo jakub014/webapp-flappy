@@ -7,3 +7,4 @@ function printer(error, stdout, stderr) {
   console.warn(stderr);
 }
 exec("git push origin master:gh-pages --force", printer);
+  

@@ -19,7 +19,9 @@ function registerScore(score)
 {
 
   if(score>bronze)
-  {playerName = prompt("What's your name?");}
+  {playerName = prompt("What's your name?");
+   if(playerName===null)
+ {playerName="Unknown player";}}
   if(score>gold)
   {
     hgold(score,playerName);
